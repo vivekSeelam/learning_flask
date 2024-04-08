@@ -15,6 +15,7 @@
     </style>
   </head>
   <body>
+    {% include "nav.html" %}
     <div class="text-center">
       <h1 class=" text-center container mt-2 mb-4">{{company_name}} Careers</h1>
       <img id="banner" class="container img-fluid" src="/static/banner.jpg" alt="Some banner">
@@ -34,11 +35,11 @@
           {% include "jobitem.html" %}
         {% endfor %}
       </div>
-      <p class="container">{{jobs}}</p>
     </div>
     <div class="container text-center"> 
       <button class="btn btn-primary">Contact us</button>
     </div>
+    {% include "footer.html" %}
     
   </body>
 </html>
